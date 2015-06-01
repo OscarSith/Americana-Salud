@@ -307,7 +307,7 @@ span.title{
 }
 footer{
 	color: #eee;
-	background: #384248;
+	background: #5E7A44;
 }
 footer h4{
 	border-bottom: 1px solid #5d5d5d;
@@ -327,12 +327,12 @@ footer .column ul a{
 footer .copyright{
 	padding: 10px;
 	color: #ccc;
-	background: #263238
+	background: #5E7A44
 }
 .navbar{
-	background: #384248;
+	background: #5E7A44;
 	margin-bottom: 0;
-	border-color: #384248
+	border-color: #5E7A44
 }
 @media (min-width: 768px) {
 	.navbar-nav > li > a {
