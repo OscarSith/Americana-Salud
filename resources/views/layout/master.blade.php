@@ -2,75 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Nutri Americana</title>
+    <meta name="author" content="Oscar Larriega <larriega@gmail.com>">
+    <title>Home - Mimity</title>
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.bxslider.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v2.3";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 	<header>
 	    <div class="container">
 	        <div class="row">
 
 	        	<!-- Logo -->
 	            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
-	            	<div class="well logo">
-	            		<a href="index.html">
-	            			Mimity <span>Online Shop</span>
-	            		</a>
-	            		<div>Lorem ipsum dolor sit amet.</div>
-	            	</div>
-	            </div>
+                    <div class="well logo">
+                        <a href="index.html">
+                            <img src="img/nutri.png" width="120px">
+                        </a>
+                    </div>
+                </div>
 	            <!-- End Logo -->
 
-				<!-- Search Form -->
-	            <div class="col-lg-5 col-md-5 col-sm-7 col-xs-12">
-	            	<div class="well">
-	                    <form action="">
-	                        <div class="input-group">
-	                            <input type="text" class="form-control input-search" placeholder="Enter something to search"/>
-	                            <span class="input-group-btn">
-	                                <button class="btn btn-default no-border-left" type="submit"><i class="fa fa-search"></i></button>
-	                            </span>
-	                        </div>
-	                    </form>
-	                </div>
-	            </div>
-	            <!-- End Search Form -->
-
-	            <!-- Shopping Cart List -->
-	            <div class="col-lg-3 col-md-4 col-sm-5">
-	                <div class="well">
-	                    <div class="btn-group btn-group-cart">
-	                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-	                            <span class="pull-left"><i class="fa fa-shopping-cart icon-cart"></i></span>
-	                            <span class="pull-left">Shopping Cart: 2 item(s)</span>
-	                            <span class="pull-right"><i class="fa fa-caret-down"></i></span>
-	                        </button>
-	                        <ul class="dropdown-menu cart-content" role="menu">
-                                <li>
-                                    <a href="detail.html">
-                                        <b>Penn State College T-Shirt</b>
-                                        <span>x1 $528.96</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="detail.html">
-                                        <b>Live Nation ACDC Gray T-Shirt</b>
-                                        <span>x1 $428.96</span>
-                                    </a>
-                                </li>
-                                <li class="divider"></li>
-                                <li><a href="cart.html">Total: $957.92</a></li>
-                            </ul>
-	                    </div>
-	                </div>
-	            </div>
-	            <!-- End Shopping Cart List -->
+				<!-- Social icons -->
+                <div class="col-sm-3 pull-right text-right" style="padding-top:20px" >
+                    <a class="fa-stack fa-lg" href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-google-plus fa-stack-1x" style="color:white"></i>
+                    <a class="fa-stack fa-lg"  href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-facebook fa-stack-1x" style="color:white"></i>
+                    </a>
+                    <a class="fa-stack fa-lg" href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">
+                        <i class="fa fa-square fa-stack-2x"></i>
+                        <i class="fa fa-youtube-square fa-stack-1x" style="color:white"></i>
+                    </a>
+                </div>
+                <!-- Ends Social icons -->
 	        </div>
 	    </div>
     </header>
@@ -90,24 +68,10 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li><a href="catalogue.html">Catalogue</a></li>
-                    <li><a href="cart.html">Shopping Cart</a></li>
-                    <li><a href="checkout.html">Checkout</a></li>
-                    <li class="nav-dropdown">
-                    	<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-							Pages <span class="caret"></span>
-						</a>
-						<ul class="dropdown-menu">
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-							<li><a href="typography.html">Typography</a></li>
-							<li><a href="detail.html">Product Detail</a></li>
-                            <li><a href="compare.html">Compare</a></li>
-                            <li><a href="login.html">Login</a></li>
-                            <li><a href="register.html">Register</a></li>
-						</ul>
-                    </li>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="about.html">Acerca de Nosotros</a></li>
+                    <li><a href="contact.html">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
@@ -120,54 +84,49 @@
     </div>
 
 	<footer>
-    	<div class="container">
-        	<div class="col-lg-3 col-md-3 col-sm-6">
-        		<div class="column">
-        			<h4>Information</h4>
-        			<ul>
-        				<li><a href="about.html">About Us</a></li>
-        				<li><a href="typography.html">Policy Privacy</a></li>
-        				<li><a href="typography.html">Terms and Conditions</a></li>
-        				<li><a href="typography.html">Shipping Methods</a></li>
-        			</ul>
-        		</div>
-        	</div>
-        	<div class="col-lg-3 col-md-3 col-sm-6">
-        		<div class="column">
-        			<h4>Categories</h4>
-        			<ul>
-        				<li><a href="catalogue.html">Cras justo odio</a></li>
-        				<li><a href="catalogue.html">Dapibus ac facilisis in</a></li>
-        				<li><a href="catalogue.html">Morbi leo risus</a></li>
-        				<li><a href="catalogue.html">Porta ac consectetur ac</a></li>
-        			</ul>
-        		</div>
-        	</div>
-        	<div class="col-lg-3 col-md-3 col-sm-6">
-        		<div class="column">
-        			<h4>Customer Service</h4>
-        			<ul>
-        				<li><a href="contact.html">Contact Us</a></li>
-        				<li><a href="#">YM: cs_</a></li>
-        				<li><a href="#">Phone: +6281234567891</a></li>
-        				<li><a href="#">Email: cs.domain@domain.tld</a></li>
-        			</ul>
-        		</div>
-        	</div>
-        	<div class="col-lg-3 col-md-3 col-sm-6">
-        		<div class="column">
-        			<h4>Follow Us</h4>
-        			<ul class="social">
-        				<li><a href="#">Google Plus</a></li>
-        				<li><a href="#">Facebook</a></li>
-        				<li><a href="#">Twitter</a></li>
-        				<li><a href="#">RSS Feed</a></li>
-        			</ul>
-        		</div>
-        	</div>
+        <div class="container">
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="column">
+                    <h4>Información</h4>Información
+                    <ul>
+                        <li><a href="about.html">Acerca de Nosotros</a></li>
+                        <li><a href="typography.html">Ventajas</a></li>         
+                        <li><a href="typography.html">Términos y condiciones</a></li>
+                        <li><a href="typography.html">Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="column">
+                    <h4>Productos</h4>
+                    <ul>
+                        <li><a href="catalogue.html">Promociones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="column">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="contact.html">Contáctenos</a></li>
+                        <li><a href="#">Teléfono: 014243536</a></li>
+                        <li><a href="#">Correo: contacto@nutriamerican.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="column">
+                    <h4>Síguenos</h4>
+                    <ul class="social">
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         <div class="navbar-inverse text-center copyright">
-        	Copyright &copy; 2015 Mimity All right reserved
+            Copyright &copy; {{ date('Y') }} Nutri American All right reserved | Ver terminos de uso
+
         </div>
     </footer>
 
