@@ -8,6 +8,7 @@
 				<div class="panel-heading">Listado de Productos <a href="{{ route('productCreate') }}" class="btn btn-primary">Nuevo Producto</a></div>
 
 				<div class="panel-body">
+					@include('partials.message-info')
 					<div class="row">
 					@each('record.item', $products, 'rec', 'record.no-items')
 					</div>

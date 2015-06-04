@@ -20,6 +20,8 @@ Route::group(['middleware' => 'auth'], function($route)
 {
 	$route->get('product', ['as' => 'productCreate', 'uses' => 'ProductController@create']);
 	$route->post('product', ['as' => 'productStore', 'uses' => 'ProductController@store']);
+	$route->get('product/{id}/edit', ['as' => 'productShow', 'uses' => 'ProductController@edit']);
+	$route->put('product/{id}/update', ['as' => 'productUpdate', 'uses' => 'ProductController@update']);
 });
 
 Route::controllers([

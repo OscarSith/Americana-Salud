@@ -4,11 +4,12 @@
 <div class="col-sm-8 col-sm-offset-2">
 	<div class="panel panel-default">
 		<div class="panel-heading">
-			<h4 class="panel-title">Nuevo Producto</h4>
+			<h4 class="panel-title">Editar Producto: <strong>{{ $empresa->name }}</strong></h4>
 		</div>
 		<div class="panel-body">
 			@include('partials.errors')
-			{!! Form::open(['route' => 'productStore', 'method' => 'post', 'files' => true]) !!}
+			@include('partials.message-info')
+			{!! Form::model($empresa, ['route' => ['productUpdate', $empresa], 'method' => 'put']) !!}
 				@include('partials.fields-product')
 			{!! Form::close() !!}
 		</div>

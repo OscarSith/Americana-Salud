@@ -73,7 +73,7 @@ class ProductController extends Controller {
 	 */
 	public function show($id)
 	{
-		//
+		
 	}
 
 	/**
@@ -84,7 +84,8 @@ class ProductController extends Controller {
 	 */
 	public function edit($id)
 	{
-		//
+		$empresa = Products::findOrFail($id);
+		return view('admin.edit-product', compact('empresa'));
 	}
 
 	/**
@@ -93,9 +94,24 @@ class ProductController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function update($id)
+	public function update($id, Request $request)
 	{
-		//
+		$values = $request->all();
+		$this->validate($request, [
+			'name' => 'required|max:255',
+			'codigo' => 'required|max:10|unique:products,codigo,' . $values['id'],
+			'price' => 'required|numeric',
+			'short_info' => 'required|max:255',
+			'currency' => 'required|in:S,D'
+		]);
+
+		$product = Products::find($id);
+		if($product->update($values))
+		{
+			return redirect()->route('admin')->with('success', 'Producto "' . $values['name'] . '" editado.');
+		}
+
+		return redirect()->back()->with('error', 'Error, no se pudo actualizar, intentelo de nuevo');
 	}
 
 	/**

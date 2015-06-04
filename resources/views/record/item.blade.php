@@ -5,7 +5,9 @@
 			<h3>{{ $rec->name }}<br>{{ $rec->codigo }}</h3>
 			<p>{{ $rec->short_info }}</p>
 			<p>{{ $rec->price }}</p>
-			<p><a href="#" class="btn btn-primary" role="button">Button</a> <a href="#" class="btn btn-default" role="button">Button</a></p>
+			<p>
+				<a href="{{ route('productShow', $rec->id) }}" class="btn btn-primary" role="button">Editar</a>
+			</p>
 		</div>
 	</div>
 </div>
