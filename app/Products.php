@@ -22,6 +22,7 @@ class Products extends Model {
 			'codigo',
 			'name',
 			'price',
+			'short_info',
 			'default_img',
 			'estado'
 		]);

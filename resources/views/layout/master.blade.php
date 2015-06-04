@@ -68,9 +68,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="/" class="active">Inicio</a></li>
                     <li><a href="#">Productos</a></li>
-                    <li><a href="about.html">Acerca de Nosotros</a></li>
+                    <li><a href="{{ url('nosotros') }}">Acerca de Nosotros</a></li>
                     <li><a href="contact.html">Contáctanos</a></li>
                 </ul>
             </div>

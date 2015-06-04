@@ -12,6 +12,7 @@
 */
 
 Route::get('/', 'HomeController@index');
+Route::get('nosotros', 'HomeController@nosotros');
 
 Route::get('admin', ['as' => 'admin', 'uses' => 'AdminController@index']);
 

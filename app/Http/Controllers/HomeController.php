@@ -33,4 +33,8 @@ class HomeController extends Controller {
 		return view('welcome');
 	}
 
+	public function nosotros()
+	{
+		return view('about');
+	}
 }

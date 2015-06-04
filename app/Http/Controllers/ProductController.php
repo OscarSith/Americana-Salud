@@ -5,6 +5,7 @@ use Nutri\Http\Controllers\Controller;
 
 use Illuminate\Http\Request;
 use Nutri\Products;
+use Nutri\ProductImages;
 
 class ProductController extends Controller {
 
@@ -44,17 +45,21 @@ class ProductController extends Controller {
 				return redirect()->back()->with('error', 'La imagen no debe pesar mas de 1.5 mb')->withInput($values);
 			}
 
-			DB::transaction(function() use ($values) {
+			$fileName = str_random(5).str_replace([' ', '-'], '_', $file->getClientOriginalName());
+			$values['default_img'] = $fileName;
 
-				public_path('img/products');
+			\DB::transaction(function() use ($values, $file) {
+
 				$product = Products::create($values);
 
 				$image['product_id'] = $product->id;
 				$image['img'] = $product->default_img;
-				$image = ProductImage::create($image);
+				ProductImages::create($image);
 
-				$request->file('default_img')->move();
+				$file->move( public_path('img/products'), $product->default_img);
 			});
+
+			return redirect()->route('admin')->with('success', 'Producto agregado con exito');
 		}
 
 		return redirect()->back()->with('error', 'Debe elegir una imagen')->withInput($values);

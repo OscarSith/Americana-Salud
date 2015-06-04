@@ -3,3 +3,4 @@
 .env.php
 .env
 vendor/
+public/img/products/
