@@ -28,14 +28,14 @@
 	            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
                     <div class="well logo">
                         <a href="index.html">
-                            <img src="img/nutri.png" width="120px">
+                            <img src="img/nutri.png" width="190px">
                         </a>
                     </div>
                 </div>
 	            <!-- End Logo -->
 
 				<!-- Social icons -->
-                <div class="col-sm-3 pull-right text-right" style="padding-top:20px" >
+                <div class="col-sm-3 pull-right text-right" style="padding-top:43px" >
                     <a class="fa-stack fa-lg" href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">
                         <i class="fa fa-square fa-stack-2x"></i>
                         <i class="fa fa-google-plus fa-stack-1x" style="color:white"></i>
@@ -52,7 +52,6 @@
 	        </div>
 	    </div>
     </header>
-
 	<!-- Navigation -->
     <nav class="navbar navbar-inverse" role="navigation">
         <div class="container">
@@ -71,7 +70,7 @@
                     <li><a href="/" class="active">Inicio</a></li>
                     <li><a href="#">Productos</a></li>
                     <li><a href="{{ url('nosotros') }}">Acerca de Nosotros</a></li>
-                    <li><a href="contact.html">Contáctanos</a></li>
+                    <li><a href="{{ url('contactanos') }}">Contáctanos</a></li>
                 </ul>
             </div>
         </div>
@@ -87,12 +86,11 @@
         <div class="container">
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="column">
-                    <h4>Información</h4>Información
+                    <h4>Información</h4>
                     <ul>
-                        <li><a href="about.html">Acerca de Nosotros</a></li>
-                        <li><a href="typography.html">Ventajas</a></li>         
-                        <li><a href="typography.html">Términos y condiciones</a></li>
-                        <li><a href="typography.html">Política de privacidad</a></li>
+                        <li><a href="{{ url('nosotros') }}">Acerca de Nosotros</a></li>     
+                        <li><a href="#terminos" data-toggle="modal">Términos de uso</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
                     </ul>
                 </div>
             </div>
@@ -100,17 +98,16 @@
                 <div class="column">
                     <h4>Productos</h4>
                     <ul>
-                        <li><a href="catalogue.html">Promociones</a></li>
+                        <li><a href="#">Promociones</a></li>
+
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="column">
-                    <h4>Customer Service</h4>
+                    <h4>Contáctenos</h4>
                     <ul>
-                        <li><a href="contact.html">Contáctenos</a></li>
-                        <li><a href="#">Teléfono: 014243536</a></li>
-                        <li><a href="#">Correo: contacto@nutriamerican.com</a></li>
+                        <li><a href="#">Correo: servicioalcliente@nutriamerican.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -118,21 +115,22 @@
                 <div class="column">
                     <h4>Síguenos</h4>
                     <ul class="social">
+                        <li><a href="#">Google+</a></li>
                         <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="navbar-inverse text-center copyright">
-            Copyright &copy; {{ date('Y') }} Nutri American All right reserved | Ver terminos de uso
-
+            © Copyright &copy; {{ date('Y') }} Nutri American Todos los derechos reservados     
         </div>
     </footer>
 
     <a href="#top" class="back-top text-center" onclick="$('body,html').animate({scrollTop:0},500); return false">
     	<i class="fa fa-angle-double-up"></i>
     </a>
+    @include('partials.terminos')
 
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
