@@ -1,17 +1,8 @@
 <?php namespace Nutri\Http\Controllers;
 
-class AdminController extends Controller {
+use Nutri\Products;
 
-	/*
-	|--------------------------------------------------------------------------
-	| Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| This controller renders your application's "dashboard" for users that
-	| are authenticated. Of course, you are free to change or remove the
-	| controller as you wish. It is just here to get your app started!
-	|
-	*/
+class AdminController extends Controller {
 
 	/**
 	 * Create a new controller instance.
@@ -30,7 +21,8 @@ class AdminController extends Controller {
 	 */
 	public function index()
 	{
-		return view('home');
+		$products = Products::paginator();
+		return view('admin.home', compact('products'));
 	}
 
 }

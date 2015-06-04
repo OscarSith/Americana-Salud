@@ -13,7 +13,13 @@
 
 Route::get('/', 'HomeController@index');
 
-Route::get('home', 'AdminController@index');
+Route::get('admin', ['as' => 'admin', 'uses' => 'AdminController@index']);
+
+Route::group(['middleware' => 'auth'], function($route)
+{
+	$route->get('product', ['as' => 'productCreate', 'uses' => 'ProductController@create']);
+	$route->post('product', ['as' => 'productStore', 'uses' => 'ProductController@store']);
+});
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
