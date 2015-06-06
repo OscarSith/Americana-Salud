@@ -6,7 +6,7 @@
 		<!-- RECENT PRODUCT -->
 		<div class="col-lg-12 col-md-12 col-sm-12 visible-lg visible-md">
 			<div class="no-padding">
-				<span class="title">RECENT PRODUCT</span>
+				<span class="title">PRODUCTO RECIENTE </span>
 			</div>
 		        <div class="thumbnail col-lg-12 col-md-12 col-sm-6 visible-lg visible-md text-center">
 		        	<a href="detail.html" class="link-p">

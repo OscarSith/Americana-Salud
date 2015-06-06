@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="description" content="">
     <meta name="author" content="Oscar Larriega <larriega@gmail.com>">
-    <title>Home - Mimity</title>
+    <title>Nutri American</title>
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.bxslider.css') }}" rel="stylesheet">
@@ -90,7 +90,7 @@
                     <ul>
                         <li><a href="{{ url('nosotros') }}">Acerca de Nosotros</a></li>     
                         <li><a href="#terminos" data-toggle="modal">Términos de uso</a></li>
-                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#politicas" data-toggle="modal">Política de privacidad</a></li>
                     </ul>
                 </div>
             </div>
@@ -107,17 +107,17 @@
                 <div class="column">
                     <h4>Contáctenos</h4>
                     <ul>
-                        <li><a href="#">Correo: servicioalcliente@nutriamerican.com</a></li>
+                        <li>Correo: servicioalcliente@nutriamerican.com</li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="column">
-                    <h4>Síguenos</h4>
+                    <h4>Síguenos en:</h4>
                     <ul class="social">
-                        <li><a href="#">Google+</a></li>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Youtube</a></li>
+                        <li><a href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">Google+</a></li>
+                        <li><a href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">Youtube</a></li>
                     </ul>
                 </div>
             </div>
@@ -131,6 +131,7 @@
     	<i class="fa fa-angle-double-up"></i>
     </a>
     @include('partials.terminos')
+    @include('partials.politicas')
 
     <script src="{{ asset('js/jquery.js') }}"></script>
     <script src="{{ asset('js/bootstrap.js') }}"></script>
