@@ -303,11 +303,11 @@ span.title{
 	margin-bottom: 20px;
 	font-family: 'open_sanscondensed_light';
 	font-size: 22px;
-	color: #4c7ed3;
+	color: #548A4D;
 }
 footer{
 	color: #eee;
-	background: #5E7A44;
+	background: #608044;
 }
 footer h4{
 	border-bottom: 1px solid #5d5d5d;
@@ -352,7 +352,7 @@ footer .copyright{
 	transition: all 100ms ease-in-out 0s ;
 }
 .navbar li a:hover, .navbar li a.active{
-	background-color: #428bca!important;
+	background-color: #96C049!important;
 }
 .navbar li.nav-dropdown .caret{
 	border-top-color: #fff;
@@ -516,3 +516,40 @@ footer .copyright{
 .panel-cat .list-group-sub:last-child a:last-child {
 	border-bottom: 1px solid #ddd
 }
+
+#terminos .modal-body {
+	height: 780px;
+	overflow: auto;
+}
+#terminos p {padding-left: 40px; text-align:justify;}
+#terminos ul {text-align: justify;}
+
+#terminos ol {
+counter-reset:item;
+padding-left:1em;
+text-align:justify;
+}
+#terminos li {
+display:block;
+}
+#terminos li:before {
+content:counters(item, ".", decimal) ". ";
+counter-increment:item;
+float:left;
+white-space:pre;
+}
+#terminos li p {
+overflow:hidden;
+}
+#terminos ol li ol li ol {
+padding-left:2em;
+}
+
+#politicas .modal-body {
+	height: 180px;
+	overflow: auto;
+}
+#politicas p {
+padding-left: 40px; 
+text-align:justify;}
+#politicas ul {text-align: justify;}
