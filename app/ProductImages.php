@@ -12,5 +12,18 @@ class ProductImages extends Model {
 		'status'
 	];
 
-	
+	public function scopePaginator($q, $product_id)
+	{
+		return $q->where('product_id', $product_id)->latest()->paginate(10, ['id', 'img', 'product_id', 'status']);
+	}
+
+	public function remove($id)
+	{
+		$producto = $this->findOrFail($id);
+		$img = $producto->img;
+		$rpta = $producto->delete();
+
+		\File::delete(public_path('img/products/' . $img));
+		return $rpta;
+	}
 }

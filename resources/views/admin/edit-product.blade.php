@@ -9,7 +9,7 @@
 		<div class="panel-body">
 			@include('partials.errors')
 			@include('partials.message-info')
-			{!! Form::model($empresa, ['route' => ['productUpdate', $empresa], 'method' => 'put']) !!}
+			{!! Form::model($empresa, ['route' => ['productUpdate', $empresa], 'method' => 'put', 'id' => 'frm-product']) !!}
 				@include('partials.fields-product')
 			{!! Form::close() !!}
 		</div>

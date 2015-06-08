@@ -5,9 +5,19 @@
 			<h3>{{ $rec->name }}<br>{{ $rec->codigo }}</h3>
 			<p>{{ $rec->short_info }}</p>
 			<p>{{ $rec->price }}</p>
-			<p>
-				<a href="{{ route('productShow', $rec->id) }}" class="btn btn-primary" role="button">Editar</a>
-			</p>
+			<div>
+				<a href="{{ route('productShow', $rec->id) }}" class="btn btn-default" role="button">Editar</a>
+				{!! Form::open(['route' => ['changeStatus', $rec->id], 'method' => 'put', 'style' => 'display:inline-block']) !!}
+				@if($rec->estado == 'A')
+					{!! Form::hidden('status', 'E') !!}
+					<button class="btn btn-danger">Eliminar</button>
+				@else
+					{!! Form::hidden('status', 'A') !!}
+					<button class="btn btn-success">Activar</button>
+				@endif
+				<a href="{{ route('listImages', $rec->id) }}" class="btn btn-info">Imagenes</a>
+				{!! Form::close() !!}
+			</div>
 		</div>
 	</div>
 </div>

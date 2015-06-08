@@ -7,6 +7,7 @@
 	<title>Laravel</title>
 
 	<link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet" />
 
 	<!-- Fonts -->
 	<link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
@@ -57,6 +58,75 @@
 
 	<!-- Scripts -->
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="{{ asset('js/jquery.hotkeys.js') }}"></script>
+	<script src="{{ asset('js/bootstrap.js') }}"></script>
+	<script src="{{ asset('js/bootstrap-wysiwyg.min.js') }}"></script>
+	<script>
+			$(function() {
+		    	function initToolbarBootstrapBindings()
+		    	{
+		      		var fonts = ['Serif', 'Sans', 'Arial', 'Arial Black', 'Courier', 
+		            	'Courier New', 'Comic Sans MS', 'Helvetica', 'Impact', 'Lucida Grande', 'Lucida Sans', 'Tahoma', 'Times',
+		            	'Times New Roman', 'Verdana'],
+	            		fontTarget = $('[title=Font]').siblings('.dropdown-menu');
+		      
+		      		$.each(fonts, function (idx, fontName)
+		      		{
+		          		fontTarget.append($('<li><a data-edit="fontName ' + fontName +'" style="font-family:\''+ fontName +'\'">'+fontName + '</a></li>'));
+		      		});
+
+		      		$('a[title]').tooltip({container:'body'});
+
+		    		$('.dropdown-menu input').click(function() {return false;})
+				    	.change(function () {
+				    		$(this).parent('.dropdown-menu').siblings('.dropdown-toggle').dropdown('toggle');
+				    	}).keydown('esc', function () {
+	        				this.value = '';
+	        				$(this).change();
+	        			});
+
+		    		// $('[data-role=magic-overlay]').each(function ()
+		      // 		{ 
+		      //  			var overlay = $(this), target = $(overlay.data('target')); 
+		      //   		overlay.css('opacity', 0).css('position', 'absolute').offset(target.offset()).width(target.outerWidth()).height(target.outerHeight());
+		      // 		});
+		      
+		      		if ("onwebkitspeechchange"  in document.createElement("input")) 
+		      		{
+		        		var editorOffset = $('#editor').offset();
+		      		}
+		      		else
+		      		{
+		        		$('#voiceBtn').hide();
+					}
+				};
+
+				function showErrorAlert (reason, detail)
+				{
+					var msg='';
+					if (reason==='unsupported-file-type')
+					{
+						msg = "Unsupported format " + detail;
+					}
+					else
+					{
+						console.log("error uploading file", reason, detail);
+					}
+
+					$('<div class="alert"> <button type="button" class="close" data-dismiss="alert">&times;</button>'+ 
+						'<strong>File upload error</strong> '+msg+' </div>').prependTo('#alerts');
+				};
+
+				initToolbarBootstrapBindings();  
+
+				$('#editor-description').wysiwyg({
+					fileUploadError: showErrorAlert
+				});
+			});
+
+			$('#frm-product').on('submit', function(e) {
+				$(this).find('#description').val($('#editor-description').cleanHtml(true));
+			});
+		</script>
 </body>
 </html>

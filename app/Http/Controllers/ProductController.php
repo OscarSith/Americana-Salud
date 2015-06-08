@@ -120,9 +120,19 @@ class ProductController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function changeStatus($id, Request $request)
 	{
-		//
+		$product = Products::findOrFail($id);
+		$product->estado = $request->get('status');
+		$product->save();
+
+		return redirect()->back();
 	}
 
+	public function setDefault($id, Request $request)
+	{
+		$image = Products::findOrFail($id);
+		$image->update($request->only(['default_img']));
+		return redirect()->back();
+	}
 }

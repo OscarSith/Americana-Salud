@@ -1,1 +1,1 @@
-<li>No hay productos que mostrar chupa pija.</li>
+<li>No hay datos que mostrar.</li>
