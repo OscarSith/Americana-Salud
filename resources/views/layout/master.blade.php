@@ -36,14 +36,14 @@
 
 				<!-- Social icons -->
                 <div class="col-sm-3 pull-right text-right" style="padding-top:43px" >
-                    <a class="fa-stack fa-lg" href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">
+                    <a class="fa-stack fa-lg social google" href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">
                         <i class="fa fa-square fa-stack-2x"></i>
                         <i class="fa fa-google-plus fa-stack-1x" style="color:white"></i>
-                    <a class="fa-stack fa-lg"  href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">
+                    <a class="fa-stack fa-lg social facebook" href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">
                         <i class="fa fa-square fa-stack-2x"></i>
                         <i class="fa fa-facebook fa-stack-1x" style="color:white"></i>
                     </a>
-                    <a class="fa-stack fa-lg" href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">
+                    <a class="fa-stack fa-lg social youtube" href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">
                         <i class="fa fa-square fa-stack-2x"></i>
                         <i class="fa fa-youtube-square fa-stack-1x" style="color:white"></i>
                     </a>
@@ -88,18 +88,19 @@
                 <div class="column">
                     <h4>Información</h4>
                     <ul>
-                        <li><a href="{{ url('nosotros') }}">Acerca de Nosotros</a></li>     
-                        <li><a href="#terminos" data-toggle="modal">Términos de uso</a></li>
-                        <li><a href="#politicas" data-toggle="modal">Política de privacidad</a></li>
+                        <li><a class="footerb" href="{{ url('nosotros') }}">Acerca de Nosotros</a></li>     
+                        <li><a class="footerb" href="#terminos" data-toggle="modal">Términos de uso</a></li>
+                        <li><a class="footerb" href="#politicas" data-toggle="modal">Política de privacidad</a></li>
                     </ul>
                 </div>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-6">
                 <div class="column">
-                    <h4>Productos</h4>
-                    <ul>
-                        <li><a href="#">Promociones</a></li>
-
+                    <h4>Síguenos en:</h4>
+                    <ul class="social">
+                        <li><a class="footerb" href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">Google+</a></li>
+                        <li><a class="footerb" href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">Facebook</a></li>
+                        <li><a class="footerb" href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">Youtube</a></li>
                     </ul>
                 </div>
             </div>
@@ -108,16 +109,6 @@
                     <h4>Contáctenos</h4>
                     <ul>
                         <li>Correo: servicioalcliente@nutriamerican.com</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-6">
-                <div class="column">
-                    <h4>Síguenos en:</h4>
-                    <ul class="social">
-                        <li><a href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">Google+</a></li>
-                        <li><a href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">Facebook</a></li>
-                        <li><a href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">Youtube</a></li>
                     </ul>
                 </div>
             </div>

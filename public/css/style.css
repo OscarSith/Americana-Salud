@@ -219,7 +219,7 @@ header .logo a:hover{
 }
 .slider{
 	margin: 0;
-	padding: 0;
+	padding: 0;r
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -323,6 +323,7 @@ footer .column ul{
 }
 footer .column ul a{
 	color: #c3c6c8;
+	text-decoration: none;
 }
 footer .copyright{
 	padding: 10px;
@@ -517,10 +518,6 @@ footer .copyright{
 	border-bottom: 1px solid #ddd
 }
 
-#terminos .modal-body {
-	height: 780px;
-	overflow: auto;
-}
 #terminos p {padding-left: 40px; text-align:justify;}
 #terminos ul {text-align: justify;}
 
@@ -553,3 +550,25 @@ padding-left:2em;
 padding-left: 40px; 
 text-align:justify;}
 #politicas ul {text-align: justify;}
+.social:hover{
+	color: #96C049;
+}
+.social {
+	color: #5E7A44;
+}
+.facebook:hover{
+	color: #3A5795;
+}
+.youtube:hover{
+	color: #E02A26;
+}
+.google:hover{
+	color: #DD4B39;
+}
+.footerb:hover{
+	font-size: 14px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
