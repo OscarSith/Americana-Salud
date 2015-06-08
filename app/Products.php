@@ -15,6 +15,19 @@ class Products extends Model {
 		'estado'
 	];
 
+	public function scopeActivePaginator($q)
+	{
+		return $q->where('estado', 'A')->latest()->paginate(4, [
+			'id',
+			'codigo',
+			'name',
+			'price',
+			'short_info',
+			'default_img',
+			'estado'
+		]);
+	}
+
 	public function scopePaginator($q)
 	{
 		return $q->latest()->paginate(10, [

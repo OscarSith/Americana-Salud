@@ -1,5 +1,7 @@
 <?php namespace Nutri\Http\Controllers;
 
+use Nutri\Products;
+
 class HomeController extends Controller {
 
 	/**
@@ -19,7 +21,8 @@ class HomeController extends Controller {
 	 */
 	public function index()
 	{
-		return view('welcome');
+		$products = Products::activePaginator();
+		return view('welcome', compact('products'));
 	}
 
 	public function nosotros()
