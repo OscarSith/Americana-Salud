@@ -570,5 +570,6 @@ text-align:justify;}
 	color: #FFFFFF;
 	text-decoration: none;
 }
-
-
+.pt0 {
+	padding-top: 0 !important
+}

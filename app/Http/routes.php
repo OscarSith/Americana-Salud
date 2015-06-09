@@ -13,7 +13,12 @@
 
 Route::get('/', 'HomeController@index');
 Route::get('nosotros', 'HomeController@nosotros');
+Route::get('product/{id}/detail', ['as' => 'detailProduct', 'uses' => 'HomeController@detailProduct']);
 Route::get('contactanos', 'HomeController@contactanos');
+Route::post('registrar', ['as' => 'registerClientData', 'uses' => 'HomeController@registerClient']);
+Route::post('registrar-datos-generales', ['as' => 'clientRegister', 'uses' => 'ClientController@store']);
+Route::get('checkout', ['as' => 'checkout', 'uses' => 'ClientController@index']);
+Route::get('cancelar-pedido', ['as' => 'cancelarPedido', 'uses' => 'ClientController@cancelar']);
 
 Route::get('admin', ['as' => 'admin', 'uses' => 'AdminController@index']);
 

@@ -96,15 +96,15 @@ class ProductController extends Controller {
 	 */
 	public function update($id, Request $request)
 	{
-		$values = $request->all();
 		$this->validate($request, [
 			'name' => 'required|max:255',
-			'codigo' => 'required|max:10|unique:products,codigo,' . $values['id'],
+			'codigo' => 'required|max:10|unique:products,codigo,' . $id,
 			'price' => 'required|numeric',
 			'short_info' => 'required|max:255',
 			'currency' => 'required|in:S,D'
 		]);
 
+		$values = $request->all();
 		$product = Products::find($id);
 		if($product->update($values))
 		{

@@ -28,7 +28,7 @@
 	            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
                     <div class="well logo">
                         <a href="index.html">
-                            <img src="img/nutri.png" width="190px">
+                            <img src="{{ asset('img/nutri.png') }}" width="190px">
                         </a>
                     </div>
                 </div>
@@ -128,6 +128,7 @@
     <script src="{{ asset('js/bootstrap.js') }}"></script>
     <script src="{{ asset('js/jquery.bxslider.min.js') }}"></script>
     <script src="{{ asset('js/jquery.blImageCenter.js') }}"></script>
+    @yield('script')
     <script src="{{ asset('js/mimity.js') }}"></script>
 </body>
 </html>

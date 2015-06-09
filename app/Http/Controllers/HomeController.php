@@ -1,6 +1,8 @@
 <?php namespace Nutri\Http\Controllers;
 
+use Illuminate\Http\Request;
 use Nutri\Products;
+use Nutri\ProductImages;
 
 class HomeController extends Controller {
 
@@ -28,6 +30,21 @@ class HomeController extends Controller {
 	public function nosotros()
 	{
 		return view('about');
+	}
+
+	public function detailProduct($id)
+	{
+		$product = Products::findOrFail($id);
+		$images = ProductImages::where('product_id', $id)->get(['img']);
+
+		return view('product-detail', compact('product', 'images'));
+	}
+
+	public function registerClient(Request $request)
+	{
+		$product = Products::find($request->get('product_id'));
+		$quanty = $request->get('quanty');
+		return view('register-client', compact('product', 'quanty'));
 	}
 
 	public function contactanos()
