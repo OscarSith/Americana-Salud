@@ -5,12 +5,12 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title" id="terminosCondiciones">
-                    <strong>Términos y Condiciones de Servicio</strong>
-                </h4>
+                <span class="propio" id="terminosCondiciones">
+                    Términos y Condiciones de Servicio            
+                </span>
             </div>
             <div class="modal-body">
-<strong>CONTRATO PARA CLIENTES DE NutriAmerican</strong>
+<p class"propio"><span class="propio"> CONTRATO PARA CLIENTES DE NutriAmerican </span></p>
 <p>Tú (el "Usuario" o "tu") deberás leer el presente contrato de licencia de usuario final (el "Contrato" en su totalidad antes de usar los servicios de NutriAmerican. Ten en cuenta que este Contrato establece un acuerdo legalmente vinculante entre tú y NutriAmerican (en lo sucesivo "NutriAmerican" o "nosotros"), propietario y poseedor de la titularidad del sitio web con dirección www.NutriAmerican.com (el "Sitio") como parte del proceso de contratación de nuestros productos o servicios, aceptas los términos y las condiciones establecidos en el presente Contrato.					</p>
 <ol>
    <li><p>CONCESIÓN DE LICENCIA / PROPIEDAD INTELECTUAL</p>
