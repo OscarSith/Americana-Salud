@@ -27,7 +27,7 @@
 	        	<!-- Logo -->
 	            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
                     <div class="well logo">
-                        <a href="index.html">
+                        <a href="/">
                             <img src="img/nutri.png" width="190px">
                         </a>
                     </div>

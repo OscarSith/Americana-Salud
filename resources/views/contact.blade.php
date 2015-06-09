@@ -1,15 +1,12 @@
 @extends('layout.master')
 
 @section('content')
-    <div class="row">
-    	<div class="col-lg-3 col-md-3 col-sm-12">
-			<div class="no-padding">
-        		<span class="title">OUR LOCATION</span>
-        	</div>
-        	Mimity Online Shop<br/>
-			Street address<br/>
-			Store Town<br/>
-			<br>
+
+<div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="no-padding">
+            <span class="title1">&nbsp;</span>
+        </div>
             @include('partials.fb-iframe')
     	</div>
 
