@@ -517,42 +517,31 @@ footer .copyright{
 .panel-cat .list-group-sub:last-child a:last-child {
 	border-bottom: 1px solid #ddd
 }
-
-#terminos p {padding-left: 40px; text-align:justify; font-family: 'source_sans_proregular';}
-#terminos ul {text-align: justify; font-family: 'source_sans_proregular';}
-
+#terminos .color-green, #terminos .propio{
+	font-family: 'open_sanscondensed_light';
+}
+.color-green {
+	color: #548A4D;
+}
 #terminos ol {
-counter-reset:item;
-padding-left:1em;
-text-align:justify;
-font-family: 'source_sans_proregular';
+	counter-reset:item;
+	padding-left:1em;
 }
 #terminos li {
-display:block; font-family: 'source_sans_proregular';
+  display: block;
 }
 #terminos li:before {
-content:counters(item, ".", decimal) ". ";
-counter-increment:item;
-float:left;
-white-space:pre;
+	color: #548A4D;
+	content: counters(item, ".", decimal) ". ";
+	counter-increment:item;
+	float:left;
+	font-weight: bold;
+	white-space:pre;
 }
-#terminos li p {
-overflow:hidden; font-family: 'source_sans_proregular';
+#terminos .modal-body>ol>li>p:first-child{
+	font-weight: bold;
+	color: #548A4D
 }
-#terminos ol li ol li ol {
-padding-left:2em; font-family: 'source_sans_proregular';
-}
-
-#politicas .modal-body {
-	height: 180px;
-	overflow: auto;
-	font-family: 'source_sans_proregular';
-}
-#politicas p {
-padding-left: 40px; 
-text-align:justify;
-font-family: 'source_sans_proregular';}
-#politicas ul {text-align: justify;}
 .social:hover{
 	color: #96C049;
 }
@@ -577,7 +566,6 @@ font-family: 'source_sans_proregular';}
 	padding-top: 0 !important
 }
 .propio {
-	font-family: 'open_sanscondensed_light';
 	font-size: 22px;
 	color: #548A4D;
 }

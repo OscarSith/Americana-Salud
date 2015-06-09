@@ -45,16 +45,17 @@
             @foreach($products as $rec)
                 <div class="col-sm-3 col-xs-12 hero-feature text-center">
                     <div class="thumbnail">
-                        <a href="{{ route('detailProduct', $rec->id) }}" class="link-p">
+                        <?php $link_detail = route('detailProduct', $rec->id); ?>
+                        <a href="{{ $link_detail }}" class="link-p">
                             <img src="{{ asset('img/products/' . $rec->default_img) }}" alt="{{ $rec->default_img }}">
                         </a>
                         <div class="caption prod-caption">
-                            <h4><a href="{{ route('detailProduct', $rec->id) }}">{{ $rec->name }}</a></h4>
+                            <h4><a href="{{ $link_detail }}">{{ $rec->name }}</a></h4>
                             <p>{{ $rec->short_info }}</p>
                             <p>
                                 <div class="btn-group">
-                                    <a href="#" class="btn btn-default">{{ $rec->price }}</a>
-                                    <a href="#" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Comprar</a>
+                                    <span class="btn btn-default">{{ $rec->price }}</span>
+                                    <a href="{{ $link_detail }}" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Comprar</a>
                                 </div>
                             </p>
                         </div>

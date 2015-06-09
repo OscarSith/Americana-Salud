@@ -5,27 +5,30 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <span class="propio" id="terminosCondiciones">
-                    Términos y Condiciones de Servicio            
-                </span>
+                <h2 class="color-green" id="terminosCondiciones">TÉRMINOS Y CONDICIONES DE SERVICIO</h2>
             </div>
-            <div class="modal-body">
-<p class"propio"><span class="propio"> CONTRATO PARA CLIENTES DE NutriAmerican </span></p>
-<p>Tú (el "Usuario" o "tu") deberás leer el presente contrato de licencia de usuario final (el "Contrato" en su totalidad antes de usar los servicios de NutriAmerican. Ten en cuenta que este Contrato establece un acuerdo legalmente vinculante entre tú y NutriAmerican (en lo sucesivo "NutriAmerican" o "nosotros"), propietario y poseedor de la titularidad del sitio web con dirección www.NutriAmerican.com (el "Sitio") como parte del proceso de contratación de nuestros productos o servicios, aceptas los términos y las condiciones establecidos en el presente Contrato.					</p>
-<ol>
-   <li><p>CONCESIÓN DE LICENCIA / PROPIEDAD INTELECTUAL</p>
-       <ol>
-   <li><p>NutriAmerican, con sujeción a los términos y condiciones del presente Contrato, garantiza a sus usuarios que toda la información proporcionada por ellos será tratada con absoluta confidencialidad y que solamente el personal de NutriAmerican tendrán acceso a dicha información. </p></li>
-   <li><p>Los términos " NutriAmerican ", los nombres de los dominios “NutriAmerican.com” y otras marcas registradas, marcas de servicio, indicadores, denominaciones comerciales o nombres de dominios utilizados por NutriAmerican en el Sitio, a veces, (las "Marcas Registradas"), son las marcas registradas, marcas de servicio, indicadores, denominaciones comerciales y/o nombres de dominios de NutriAmerican y/o sus compañías del grupo o de sus otorgantes de licencias, y estas entidades se reservan todos los derechos sobre dichas marcas registradas. Asimismo, todo el contenido del Sitio, incluyendo, pero no limitado al Software, imágenes, fotografías, gráficos, animaciones, vídeos, música, audio y texto (el "Contenido del Sitio") pertenece a NutriAmerican y/o a sus compañías del grupo o a sus otorgantes de licencias y está protegido por copyright o por otros derechos de propiedad intelectual. Por el presente, admites que al utilizar el Servicio y el Sitio no obtienes ningún derecho al Contenido del Sitio ni a ninguna parte del mismo. No podrás utilizar bajo ninguna circunstancia el Contenido del Sitio y/o de la Marca Registrada sin el previo consentimiento por escrito de NutriAmerican.
-Además, te comprometes a no llevar a cabo acciones que perjudiquen o puedan llegar a perjudicar los derechos, incluidos los derechos de propiedad intelectual, ostentados por NutriAmerican, sus compañías del grupo y/o sus otorgantes de licencias en el Software, las Marcas Registradas o el Contenido del sitio, y también te comprometes a no llevar a cabo acciones que perjudiquen la imagen o reputación de NutriAmerican, las compañías de su grupo, sus empleados, directivos ni consultores. </p></li>
-   	 	</ol>
-	</li>   
- 
-
-   <li><p>TUS MANIFESTACIONES Y COMPROMISOS </p>
-   		 <p>Antes de usar el Servicio, y de manera permanente, manifiestas, garantizas, convienes y aceptas que:</p>
-      <ol>
-         <li><p>El uso del Servicio es tu opción personal, y que lo realizas por tu cuenta y riesgo. </p></li>
+            <div class="modal-body text-justify">
+              <p class="propio">CONTRATO PARA CLIENTES DE NutriAmerican</p>
+              <p>Tú (el "Usuario" o "tu") deberás leer el presente contrato de licencia de usuario final (el "Contrato" en su totalidad antes de usar los servicios de NutriAmerican. Ten en cuenta que este Contrato establece un acuerdo legalmente vinculante entre tú y NutriAmerican (en lo sucesivo "NutriAmerican" o "nosotros"), propietario y poseedor de la titularidad del sitio web con dirección www.NutriAmerican.com (el "Sitio") como parte del proceso de contratación de nuestros productos o servicios, aceptas los términos y las condiciones establecidos en el presente Contrato.				</p>
+              <ol class="text-justify">
+                <li>
+                  <p>CONCESIÓN DE LICENCIA / PROPIEDAD INTELECTUAL</p>
+                  <ol>
+                    <li>
+                      <p>NutriAmerican, con sujeción a los términos y condiciones del presente Contrato, garantiza a sus usuarios que toda la información proporcionada por ellos será tratada con absoluta confidencialidad y que solamente el personal de NutriAmerican tendrán acceso a dicha información.
+                      </p>
+                    </li>
+                    <li>
+                      <p>Los términos " NutriAmerican ", los nombres de los dominios “NutriAmerican.com” y otras marcas registradas, marcas de servicio, indicadores, denominaciones comerciales o nombres de dominios utilizados por NutriAmerican en el Sitio, a veces, (las "Marcas Registradas"), son las marcas registradas, marcas de servicio, indicadores, denominaciones comerciales y/o nombres de dominios de NutriAmerican y/o sus compañías del grupo o de sus otorgantes de licencias, y estas entidades se reservan todos los derechos sobre dichas marcas registradas. Asimismo, todo el contenido del Sitio, incluyendo, pero no limitado al Software, imágenes, fotografías, gráficos, animaciones, vídeos, música, audio y texto (el "Contenido del Sitio") pertenece a NutriAmerican y/o a sus compañías del grupo o a sus otorgantes de licencias y está protegido por copyright o por otros derechos de propiedad intelectual. Por el presente, admites que al utilizar el Servicio y el Sitio no obtienes ningún derecho al Contenido del Sitio ni a ninguna parte del mismo. No podrás utilizar bajo ninguna circunstancia el Contenido del Sitio y/o de la Marca Registrada sin el previo consentimiento por escrito de NutriAmerican.<br>
+                    Además, te comprometes a no llevar a cabo acciones que perjudiquen o puedan llegar a perjudicar los derechos, incluidos los derechos de propiedad intelectual, ostentados por NutriAmerican, sus compañías del grupo y/o sus otorgantes de licencias en el Software, las Marcas Registradas o el Contenido del sitio, y también te comprometes a no llevar a cabo acciones que perjudiquen la imagen o reputación de NutriAmerican, las compañías de su grupo, sus empleados, directivos ni consultores.
+                    </p>
+                  </li>
+   	 	          </ol>
+	           </li>
+            <li><p>TUS MANIFESTACIONES Y COMPROMISOS </p>
+   		         <p>Antes de usar el Servicio, y de manera permanente, manifiestas, garantizas, convienes y aceptas que:</p>
+              <ol>
+                <li><p>El uso del Servicio es tu opción personal, y que lo realizas por tu cuenta y riesgo. </p></li>
          <li><p>Deberás proporcionarnos determinada información personal sobre ti mismo, al objeto del uso del Servicio. NutriAmerican procesará tu información personal ateniéndose a la ley de protección de datos. </p></li>
          <li><p>Serás el único responsable de la conexión a Internet y de las redes de telecomunicaciones requeridas para el acceso y uso del Servicio, que quedan fuera del control de NutriAmerican, de cuyos eventuales cortes, lentitud, restricciones de capacidad u otras deficiencias no seremos considerados responsables en modo alguno. </p></li>
          <li><p>NutriAmerican de Salud no llevará a cabo ningún trámite del cliente hasta no recibir el 100% del pago por parte del cliente, sin aceptar anticipos o garantías. </p></li>
@@ -48,13 +51,16 @@ Además, te comprometes a no llevar a cabo acciones que perjudiquen o puedan lle
    </li>  
 
 
-   <li><p>LIMITACIÓN DE RESPONSABILIDAD </p></li>
+   <li>
+      <p>LIMITACIÓN DE RESPONSABILIDAD </p>
    		<p>Bajo ninguna circunstancia, ni siquiera por negligencia, NutriAmerican será responsable de ningún daño especial, fortuito, directo, indirecto o resultante (incluyendo, de manera no limitativa, daños por pérdidas de beneficios comerciales, interrupción de actividad comercial, pérdida de información comercial, o cualquier otra merma económica o de salud) derivado del uso (o uso incorrecto) del Servicio y Productos vendidos por NutriAmerican, aun cuando NutriAmerican tuviera previamente constancia de la eventual aparición de dichos daños.</p>
-   <li><p>MODIFICACIÓN </p></li>
-		<p>NutriAmerican se reserva el derecho a actualizar o modificar el presente Contrato o cualquier parte del mismo cuando lo considere oportuno y sin necesidad de comunicarlo previamente. </p>   		
-   <li><p>LEGISLACIÓN APLICABLE </p></li>
+    </li>
+   <li><p>MODIFICACIÓN </p>
+		<p>NutriAmerican se reserva el derecho a actualizar o modificar el presente Contrato o cualquier parte del mismo cuando lo considere oportuno y sin necesidad de comunicarlo previamente. </p>
+    </li>
+   <li><p>LEGISLACIÓN APLICABLE </p>
 		<p>El Contrato y cualquier otra cuestión relacionada con el mismo se regirán e interpretarán de conformidad con las leyes según el fuero de los domicilios pertinentes. Tú acuerdas de forma irrevocable que, tal como se indica a continuación, toda controversia, disputa o diferencia concerniente al Contrato o a cualquier cuestión relacionada con el mismo se someterá de manera exclusiva a la jurisdicción de los tribunales competentes. Asimismo, ambas partes renuncian de manera irrevocable a cualquier derecho del que pudieran gozar para oponerse a la formulación de una demanda ante dichos tribunales, o a alegar que tal demanda haya sido interpuesta ante un foro inadecuado o sin jurisdicción para dicha cuestión. Ninguna de las disposiciones de la presente cláusula limitarán el derecho de NutriAmerican a llevar a cabo procedimientos contra ti en cualquier otro tribunal de la jurisdicción competente, ni la toma de procedimientos en una o más jurisdicciones excluirá la toma de procedimientos en otras jurisdicciones, ya sean simultáneas o no, en la medida permitida por la ley de tales jurisdicciones. </p>   
-
+  </li>
    <li><p>GARANTÍAS </p>
       <ol>
          <li><p>NutriAmerican de Salud no asume responsabilidad alguna por garantías, explícitas o implícitas, relacionadas con el Servicio, que se te proporciona «tal cual», y que se te facilita sin garantía y sin responsabilidad alguna respecto a su calidad, aptitud para el uso, integridad o precisión. </p></li>
@@ -63,19 +69,18 @@ Además, te comprometes a no llevar a cabo acciones que perjudiquen o puedan lle
       </ol>
    </li>  
 
-	<li><p>INDEPENDENCIA DE LAS CLÁUSULAS DEL CONTRATO </p></li>
-			<p>Si alguna de las cláusulas del presente Contrato se declara ilícita, inválida o inexigible en una jurisdicción, esto no afectará a la validez o vigencia del resto de ellas en dicha jurisdicción, ni a la validez y vigencia en otras jurisdicciones de la cláusula en cuestión y las restantes disposiciones del Contrato. </p>   
-	<li><p>CESIÓN </p></li>
+	<li><p>INDEPENDENCIA DE LAS CLÁUSULAS DEL CONTRATO </p>
+			<p>Si alguna de las cláusulas del presente Contrato se declara ilícita, inválida o inexigible en una jurisdicción, esto no afectará a la validez o vigencia del resto de ellas en dicha jurisdicción, ni a la validez y vigencia en otras jurisdicciones de la cláusula en cuestión y las restantes disposiciones del Contrato. </p>
+  </li>
+	<li><p>CESIÓN </p>
 			<p>NutriAmerican se reserva el derecho de ceder su posición contractual, en su totalidad o en parte, en cualquier momento y sin necesidad de aviso previo. El Usuario no podrá ceder sus derechos u obligaciones dimanantes del presente Contrato. </p>   
-	   
-
+	</li>
    <li><p>DISPOSICIONES VARIAS </p>
       <ol>
          <li><p>Nada de lo dispuesto en el presente Contrato crea ni otorga derechos ni beneficios de ningún tipo a favor de terceras partes ajenas al Contrato. </p></li>
          <li><p>Nada de lo dispuesto en el presente Contrato crea una relación de asociación, de agencia, de consorcio, fiduciaria o de jointventure entre las partes, ni deberá interpretarse en este sentido. </p></li>
          <li><p>El presente Contrato constituye la totalidad de lo convenido y acordado por las partes en lo concerniente al Servicio, y reemplaza cualquier contrato, acuerdo o convenio anterior entre las partes. </p></li>
          <li><p>El Usuario deberá proporcionar siempre información completa y fidedigna con respecto a toda la información solicitada por NutriAmerican en relación con el uso del Servicio por parte del Usuario, que estará siempre sujeto a los términos y condiciones de la política de privacidad. </p></li>
-         
       </ol>
    </li>  
 </div>		
