@@ -63,7 +63,7 @@ class HomeController extends Controller {
 		]);
 
 		\Mail::send('emails.send-contact', $request->all(), function($message) {
-			$message->to('larriega@gmail.com', 'Oscar Larriega');//americanadesalud Nutriamerican
+			$message->to('americanadesalud@gmail.com', 'Nutriamerican');
 			$message->subject('Enviaron una CONSULTA desde la web de www.nutriamerican.com');
 		});
 
