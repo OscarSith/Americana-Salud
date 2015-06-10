@@ -23,7 +23,7 @@
         <div class="white-container pt0">
             <span class="title">REGISTRAR</span>
             <p>Llene el siguiente formualario para el proceso de compra del producto <strong>{{ $product->name }}</strong></p>
-
+			@include('partials.errors')
             {!! Form::open(['route' => 'clientRegister']) !!}
             	<input type="hidden" name="product_id" value="{{ $product->id }}">
                 <div class="col-lg-6 col-xs-12">

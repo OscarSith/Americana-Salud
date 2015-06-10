@@ -2,7 +2,7 @@
 
 use Nutri\Http\Requests\Request;
 
-class ClientRequest extends Request {
+class SendOrderRequest extends Request {
 
 	/**
 	 * Determine if the user is authorized to make this request.
@@ -22,13 +22,12 @@ class ClientRequest extends Request {
 	public function rules()
 	{
 		return [
-			'nombres' => 'required|max:255',
-			'apellido' => 'required|max:150',
-			'telefono' => 'required|max:20',
-			'correo' => 'required|email|unique:clients,correo,7',
+			'full_name' => 'required|max:255',
+			'telefono1' => 'required|max:20',
 			'direccion' => 'required|max:255',
-			'terminos' => 'accepted',
-			'cantidad' => 'required|numeric'
+			'referencia' => 'required|max:255',
+			'ciudad' => 'required|max:50',
+			'pais' => 'required|max:50',
 		];
 	}
 

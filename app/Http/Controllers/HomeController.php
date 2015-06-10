@@ -42,9 +42,11 @@ class HomeController extends Controller {
 
 	public function registerClient(Request $request)
 	{
-		$product = Products::find($request->get('product_id'));
-		$quanty = $request->get('quanty');
-		return view('register-client', compact('product', 'quanty'));
+		$product = Products::findOrFail($request->get('product_id'));
+		session(['quanty' => $request->get('quanty')]);
+		session(['product' => $product]);
+
+		return redirect()->route('addDataClient');
 	}
 
 	public function contactanos()

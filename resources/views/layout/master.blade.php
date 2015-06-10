@@ -130,5 +130,6 @@
     <script src="{{ asset('js/jquery.blImageCenter.js') }}"></script>
     @yield('script')
     <script src="{{ asset('js/mimity.js') }}"></script>
+    @include('partials.modal-message-pay')
 </body>
 </html>

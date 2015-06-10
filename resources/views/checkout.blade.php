@@ -22,60 +22,52 @@
     	</div>
 
     	<div class="clearfix visible-sm"></div>
-
     	<!-- Cart -->
     	<div class="col-lg-9 col-md-9 col-sm-12">
     		<div class="col-lg-12 col-sm-12">
         		<span class="title">CHECKOUT</span>
         	</div>
             <div class="col-lg-12 col-sm-12 hero-feature">
+                @include('partials.errors')
+                {!! Form::open(['route' => 'sendOrder']) !!}
     			<table class="table table-bordered tbl-checkout">
     				<tbody>
                         <tr>
-                            <td>First Name</td>
-                            <td>
-                                <input type="text" name="" class="form-control" />
-                            </td>
-                            <td>Last Name</td>
-                            <td>
-                                <input type="text" name="" class="form-control" />
+                            <td>Nombre Completo</td>
+                            <td colspan="4">
+                                {!! Form::text('full_name', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                         <tr>
-                            <td>Email</td>
+                            <td>Teléfono 1</td>
                             <td>
-                                <input type="text" name="" class="form-control" />
+                                {!! Form::text('telefono1', null, ['class' => 'form-control']) !!}
                             </td>
-                            <td>Telephone</td>
+                            <td>Teléfono 2</td>
                             <td>
-                                <input type="text" name="" class="form-control" />
+                                {!! Form::text('telefono2', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                         <tr>
-                            <td>Address</td>
+                            <td>Dirección</td>
                             <td colspan="3">
-                                <textarea name="" class="form-control"></textarea>
+                                {!! Form::textarea('direccion', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                         <tr>
-                            <td>City</td>
-                            <td>
-                                <input type="text" name="" class="form-control" />
-                            </td>
-                            <td>Post Code</td>
-                            <td>
-                                <input type="text" name="" class="form-control" />
+                            <td>Referencia</td>
+                            <td colspan="3">
+                                {!! Form::text('referencia', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                         <tr>
-                            <td>Country</td>
+                            <td>País</td>
                             <td>
-                                <select class="form-control">
-                                    <option value=""> --- Please Select --- </option>
-                                    <option value="244">Aaland Islands</option>
-                                    <option value="1">Afghanistan</option>
-                                    <option value="2">Albania</option>
-                                  </select>
+                                {!! Form::select('pais', $paises, null, ['class' => 'form-control']) !!}
+                            </td>
+                            <td>Ciudad - Estado</td>
+                            <td>
+                                {!! Form::text('ciudad', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                     </tbody>
@@ -83,24 +75,27 @@
                 <table class="table table-bordered tbl-cart">
                     <thead>
                         <tr>
-                            <td>Product Name</td>
-                            <td class="td-qty">Quantity</td>
-                            <td>Unit Price</td>
-                            <td>Sub Total</td>
-                            <td></td>
+                            <td>Nombre Producto</td>
+                            <td>Precio Unitario</td>
+                            <td class="td-qty">Cantidad</td>
+                            <td>Precio Total</td>
                         </tr>
                     </thead>
                     <tbody>
+                        <?php
+                        $sinIgv = $product['price'] / 1.18;
+                        $totalSinImpuesto = number_format($sinIgv * (int) session('quanty'), 2);
+                        $totalPagar = $product['price'] * (int) session('quanty');
+                        ?>
                         <tr>
                             <td>{{ $product['name'] }}</td>
-                            <td>1</td>
-                            <td class="price">S/. {{ number_format($product['price'] / 1.18, 2)  }}</td>
-                            <td>S/. {{ $product['price'] }}</td>
-                            <td class="text-center">
-                                <a href="#" class="remove_cart" rel="2">
-                                    <i class="fa fa-trash-o"></i>
-                                </a>
-                            </td>
+                            <td class="price">S/. {{ number_format($sinIgv, 2)  }}</td>
+                            <td>{{ session('quanty') }}</td>
+                            <td>S/. {{ $totalSinImpuesto }}</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" align="right">IGV</td>
+                            <td class="total" colspan="2"><b>S/. {{ number_format($totalPagar - $totalSinImpuesto, 2)}}</b></td>
                         </tr>
                         <tr>
                             <td colspan="3" align="right">Costo de envío</td>
@@ -108,15 +103,15 @@
                         </tr>
                         <tr>
                             <td colspan="3" align="right">Total</td>
-                            <td class="total" colspan="2"><b>S/. {{ number_format($product['price'] + 5, 2) }}</b></td>
+                            <td class="total"><b>S/. {{ number_format($totalPagar + 5, 2) }}</b></td>
                         </tr>
                     </tbody>
                 </table>
     			<div class="btn-group btns-cart">
                     <a href="{{ route('cancelarPedido') }}" class="btn btn-danger">Cancelar</a>
-    				<button type="button" class="btn btn-primary">Confirmar Pedido</button>
+    				<button class="btn btn-primary">Confirmar Pedido</button>
     			</div>
-
+                {!! Form::close() !!}
             </div>
     	</div>
     	<!-- End Cart -->
