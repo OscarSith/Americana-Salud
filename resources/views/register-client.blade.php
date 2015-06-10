@@ -59,7 +59,7 @@
                 <div class="clearfix"></div>
                 <div class="checkbox">
                     <label>
-                        {!! Form::checkbox('terminos') !!} Acepto los <a href="#">terminos y condiciones.</a>
+                        {!! Form::checkbox('terminos') !!} Acepto los <a href="#terminos" data-toggle="modal">terminos y condiciones.</a>
                     </label>
                 </div>
                 <button class="btn btn-primary">Siguiente</button>

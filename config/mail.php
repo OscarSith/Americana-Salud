@@ -54,7 +54,7 @@ return [
 	|
 	*/
 
-	'from' => ['address' => 'noreply@nutriamerican.com', 'name' => 'no-reply'],
+	'from' => ['address' => 'noreply@nutriamerican.com', 'name' => 'Nutri American'],
 
 	/*
 	|--------------------------------------------------------------------------
@@ -119,6 +119,6 @@ return [
 	|
 	*/
 
-	'pretend' => env('MAIL_PRETEND'),
+	'pretend' => env('MAIL_PRETEND', false),
 
 ];

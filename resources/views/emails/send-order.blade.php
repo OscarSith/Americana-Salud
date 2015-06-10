@@ -4,7 +4,7 @@
 			<td colspan="5" style="text-align:center"><h2>Ha solicitado una orden:</h2></td>
 		</tr>
 		<tr>
-			<td rowspan="8"><img src="{{ asset('img/products/' . session('product')->default_img) }}" alt=""></td>
+			<td rowspan="8"><img src="{{ asset('img/products/' . session('product')->default_img) }}" alt="" style="max-width:160px"></td>
 		</tr>
 		<tr>
 			<td><strong>Nombre</strong></td>

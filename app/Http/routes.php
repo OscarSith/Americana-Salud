@@ -15,6 +15,7 @@ Route::get('/', 'HomeController@index');
 Route::get('nosotros', 'HomeController@nosotros');
 Route::get('product/{id}/detail', ['as' => 'detailProduct', 'uses' => 'HomeController@detailProduct']);
 Route::get('contactanos', 'HomeController@contactanos');
+Route::post('enviar-consulta', ['as' => 'sendContact', 'uses' => 'HomeController@sendContact']);
 
 Route::post('registrar', ['as' => 'registerClientData', 'uses' => 'HomeController@registerClient']);
 

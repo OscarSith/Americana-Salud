@@ -67,10 +67,10 @@
             </div>
             <div class="collapse navbar-collapse navbar-ex1-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="/" class="active">Inicio</a></li>
-                    <li><a href="#">Productos</a></li>
-                    <li><a href="{{ url('nosotros') }}">Acerca de Nosotros</a></li>
-                    <li><a href="{{ url('contactanos') }}">Contáctanos</a></li>
+                    <?php $uri = Route::current()->uri(); ?>
+                    <li><a href="/" {{ $uri == '/' ? "class=active" : '' }}>Inicio</a></li>
+                    <li><a href="{{ url('nosotros') }}" {{ $uri == 'nosotros' ? "class=active" : '' }}>Acerca de Nosotros</a></li>
+                    <li><a href="{{ url('contactanos') }}" {{ $uri == 'contactanos' ? "class=active" : '' }}>Contáctanos</a></li>
                 </ul>
             </div>
         </div>

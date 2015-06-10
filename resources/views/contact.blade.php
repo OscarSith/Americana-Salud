@@ -18,43 +18,47 @@
         		<span class="title">CONTÁCTANOS</span>
         	</div>
             <div class="col-lg-12 col-sm-12 hero-feature">
+                @include('partials.message-info')
+                @include('partials.errors')
+                {!! Form::open(['route' => 'sendContact']) !!}
                 <table class="table table-bordered tbl-checkout">
                     <tbody>
                         <tr>
                             <td>Nombre</td>
                             <td>
-                                <input type="text" name="" class="form-control" />
+                                {!! Form::text('nombre', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                       <!--   <tr>
                             <td>Last Name</td>
                             <td>
-                                <input type="text" name="" class="form-control" />
+                                {!! Form::text('', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr> -->
                         <tr>
-                            <td>E-mail</td>
+                            <td>Correo</td>
                             <td>
-                                <input type="text" name="" class="form-control" />
+                                {!! Form::email('correo', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                       <!--   <tr>
                             <td>Telephone</td>
                             <td>
-                                <input type="text" name="" class="form-control" />
+                                {!! Form::text('', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr> -->
                         <tr>
                             <td>Consulta</td>
                             <td colspan="3">
-                                <textarea name="" class="form-control" rows="5"></textarea>
+                                {!! Form::textarea('consulta', null, ['class' => 'form-control']) !!}
                             </td>
                         </tr>
                     </tbody>
                 </table>
                 <div class="btn-group btns-cart">
-                    <button type="button" class="btn btn-primary">Enviar</button>
+                    <button class="btn btn-primary">Enviar</button>
                 </div>
+                {!! Form::close() !!}
             </div>
     	</div>
     </div>

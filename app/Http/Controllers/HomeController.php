@@ -53,4 +53,20 @@ class HomeController extends Controller {
 	{
 		return view('contact');
 	}
+
+	public function sendContact(Request $request)
+	{
+		$this->validate($request, [
+			'nombre' => 'required|max:255',
+			'correo' => 'required|email',
+			'consulta' => 'required|min:5',
+		]);
+
+		\Mail::send('emails.send-contact', $request->all(), function($message) {
+			$message->to('larriega@gmail.com', 'Oscar Larriega');//americanadesalud Nutriamerican
+			$message->subject('Enviaron una CONSULTA desde la web de www.nutriamerican.com');
+		});
+
+		return redirect()->back()->with('success', 'Su consulta ha sido enviada con exito.');
+	}
 }
