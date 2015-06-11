@@ -569,3 +569,12 @@ footer .copyright{
 	font-size: 22px;
 	color: #548A4D;
 }
+#img-logo {
+	width: 190px;
+}
+
+@media (max-width: 768px) {
+	#img-logo {
+		width: 110px;
+	}
+}

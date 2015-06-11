@@ -25,10 +25,10 @@
 	        <div class="row">
 
 	        	<!-- Logo -->
-	            <div class="col-lg-4 col-md-3 hidden-sm hidden-xs">
+	            <div class="col-lg-4 col-md-3 pull-left">
                     <div class="well logo">
                         <a href="/">
-                            <img src="{{ asset('img/nutri.png') }}" width="190px">
+                            <img src="{{ asset('img/nutri.png') }}" id="img-logo">
                         </a>
                     </div>
                 </div>

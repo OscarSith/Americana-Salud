@@ -51,7 +51,7 @@
                     {!! Form::text('direccion', null, ['class'=>'form-control']) !!}
                     <br clear="all"/>
                 </div>
-                <div class="col-xs-2">
+                <div class="col-xs-6">
                     <label for="cantidad">Cantidad Solicitada</label>
                     {!! Form::text('cantidad', $quanty, ['class'=>'form-control']) !!}
                     <br clear="all"/>

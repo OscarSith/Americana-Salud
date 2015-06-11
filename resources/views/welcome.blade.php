@@ -2,8 +2,7 @@
 
 @section('content')
 <div class="row">
-    <!-- Slider -->
-    <div class="col-lg-9 col-md-12">
+    <div class="col-lg-9 col-sm-12">
         <div class="slider">
             <ul class="bxslider">
                 <li>
@@ -29,8 +28,7 @@
             </ul>
         </div>
     </div>
-    <!-- End Slider -->
-    <div class="col-md-3 sm-hidden xs-hidden" style="padding-left: 0" >
+    <div class="col-md-3 hidden-xs hidden-sm" style="padding-left: 0">
         @include('partials.fb-iframe')
     </div>
 </div>
