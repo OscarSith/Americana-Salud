@@ -38,7 +38,7 @@
 					</div>
 
 					<div class="col-sm-6">
-						<div class="well well-sm product-short-detail">
+						<div class="well product-short-detail">
 							<div class="row">
 								<div class="the-list">
 									<h3 class="col-xs-12">
@@ -80,7 +80,7 @@
 						<!-- Tab panes -->
 						<div class="tab-content">
 							<div class="tab-pane active" id="desc">
-								<div class="well">
+								<div class="well well-sm">
 									{!! $product->description !!}
 								</div>
 							</div>
