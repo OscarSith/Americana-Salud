@@ -7,16 +7,6 @@ use Nutri\ProductImages;
 class HomeController extends Controller {
 
 	/**
-	 * Create a new controller instance.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		// $this->middleware('guest');
-	}
-
-	/**
 	 * Show the application welcome screen to the user.
 	 *
 	 * @return Response
@@ -63,7 +53,7 @@ class HomeController extends Controller {
 		]);
 
 		\Mail::send('emails.send-contact', $request->all(), function($message) {
-			$message->to('americanadesalud@gmail.com', 'Nutriamerican');
+			$message->to('ventas@nutriamerican', 'Nutriamerican');
 			$message->subject('Enviaron una CONSULTA desde la web de www.nutriamerican.com');
 		});
 

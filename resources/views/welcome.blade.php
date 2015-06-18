@@ -5,26 +5,10 @@
     <div class="col-lg-9 col-sm-12">
         <div class="slider">
             <ul class="bxslider">
-                <li>
-                    <a href="index.html">
-                        <img src="img/banner_slider-4.jpg" alt=""/>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <img src="img/banner_slider-3.jpg" alt=""/>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <img src="img/banner_slider-2.jpg" alt=""/>
-                    </a>
-                </li>
-                <li>
-                    <a href="index.html">
-                        <img src="img/banner_slider-1.jpg" alt=""/>
-                    </a>
-                </li>
+                <li><img src="img/banner_slider-4.jpg" alt=""/></li>
+                <li><img src="img/banner_slider-3.jpg" alt=""/></li>
+                <li><img src="img/banner_slider-2.jpg" alt=""/></li>
+                <li><img src="img/banner_slider-1.jpg" alt=""/></li>
             </ul>
         </div>
     </div>
