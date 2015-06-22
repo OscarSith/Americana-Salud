@@ -2,17 +2,7 @@
 
 @section('content')
 <div class="row">
-	<div class="col-md-3 col-sm-12 hidden-sm hidden-xs">
-		<div class="no-padding">
-			<span class="title1">&nbsp;</span>
-		</div>
-		@include('partials.fb-iframe')
-	</div>
-
-		<div class="clearfix visible-sm"></div>
-
-		<!-- Cart -->
-	<div class="col-lg-9 col-md-9 col-sm-12">
+	<div class="col-sm-12">
 		<div class="col-lg-12 col-sm-12">
 			<span class="title">MUESTROS PRODUCTOS</span>
 		</div>

@@ -9,10 +9,11 @@
             Av Aviación 2855 Interior 1158 San Borja<br>
             <i class="fa fa-phone"></i> Teléfono fijo: 12388*7*1
         </address>
-        <div class="no-padding">
-            <span class="title1">Cobertura en todo el Perú</span>
+        <div class="no-padding text-center">
+            <h5 class="title1">Cobertura en todo el Perú</h5>
+            <img src="{{ asset('img/mapa.jpg') }}" alt="" class="img-responsive">
+            <br>
         </div>
-        
 	</div>
 	<div class="col-lg-9 col-md-9 col-sm-12">
 		<div class="col-lg-12 col-sm-12">
