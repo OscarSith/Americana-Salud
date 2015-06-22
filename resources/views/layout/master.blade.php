@@ -76,6 +76,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 <ul class="nav navbar-nav">
                     <?php $uri = Route::current()->uri(); ?>
                     <li><a href="/" {{ $uri == '/' ? "class=active" : '' }}>Inicio</a></li>
+                    <li><a href="{{ url('productos') }}" {{ $uri == 'productos' ? "class=active" : '' }}>Productos</a></li>
                     <li><a href="{{ url('nosotros') }}" {{ $uri == 'nosotros' ? "class=active" : '' }}>Acerca de Nosotros</a></li>
                     <li><a href="{{ url('contactanos') }}" {{ $uri == 'contactanos' ? "class=active" : '' }}>Contáctanos</a></li>
                 </ul>
@@ -116,6 +117,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                     <h4>Contáctenos</h4>
                     <ul>
                         <li>Correo: servicioalcliente@nutriamerican.com</li>
+                        <li><i class="fa fa-phone"></i> Teléfono fijo: 12388*7*1</li>
                     </ul>
                 </div>
             </div>

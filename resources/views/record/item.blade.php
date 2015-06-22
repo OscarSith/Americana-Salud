@@ -10,7 +10,7 @@
 				{!! Form::open(['route' => ['changeStatus', $rec->id], 'method' => 'put', 'style' => 'display:inline-block']) !!}
 				@if($rec->estado == 'A')
 					{!! Form::hidden('status', 'E') !!}
-					<button class="btn btn-danger">Eliminar</button>
+					<button class="btn btn-danger">Inactivar</button>
 				@else
 					{!! Form::hidden('status', 'A') !!}
 					<button class="btn btn-success">Activar</button>

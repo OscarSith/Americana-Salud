@@ -17,6 +17,12 @@ class HomeController extends Controller {
 		return view('welcome', compact('products'));
 	}
 
+	public function productos()
+	{
+		$products = Products::activePaginator();
+		return view('products', compact('products'));
+	}
+
 	public function nosotros()
 	{
 		return view('about');

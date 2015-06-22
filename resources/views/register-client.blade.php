@@ -53,7 +53,7 @@
                 </div>
                 <div class="col-xs-6">
                     <label for="cantidad">Cantidad Solicitada</label>
-                    {!! Form::text('cantidad', $quanty, ['class'=>'form-control']) !!}
+                    {!! Form::text('cantidad', $quanty, ['class'=>'form-control', 'readonly']) !!}
                     <br clear="all"/>
                 </div>
                 <div class="clearfix"></div>

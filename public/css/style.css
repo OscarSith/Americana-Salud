@@ -578,3 +578,7 @@ footer .copyright{
 		width: 110px;
 	}
 }
+#txtConsult {
+	background: url('../img/watermark.png') 97% 90% no-repeat;
+	opacity: .5;
+}

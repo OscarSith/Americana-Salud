@@ -4,10 +4,15 @@
 
 <div class="row">
     <div class="col-md-3 col-sm-12 hidden-sm hidden-xs">
+        <span class="title">DIRECCIÓN</span>
+        <address>
+            Av Aviación 2855 Interior 1158 San Borja<br>
+            <i class="fa fa-phone"></i> Teléfono fijo: 12388*7*1
+        </address>
         <div class="no-padding">
             <span class="title1">Cobertura en todo el Perú</span>
         </div>
-        @include('partials.fb-iframe')
+        
 	</div>
 	<div class="col-lg-9 col-md-9 col-sm-12">
 		<div class="col-lg-12 col-sm-12">
@@ -46,7 +51,7 @@
                     <tr>
                         <td>Consulta</td>
                         <td colspan="3">
-                            {!! Form::textarea('consulta', null, ['class' => 'form-control']) !!}
+                            {!! Form::textarea('consulta', null, ['class' => 'form-control', 'id' => 'txtConsult']) !!}
                         </td>
                     </tr>
                 </tbody>

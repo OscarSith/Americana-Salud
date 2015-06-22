@@ -2,12 +2,13 @@
 
 @section('content')
 <div class="row">
-    <div class="col-lg-9 col-sm-12">
+    <div class="col-sm-12 col-md-9">
         <div class="slider">
             <ul class="bxslider">
                 <li><img src="img/banner_slider-4.jpg" alt=""/></li>
                 <li><img src="img/banner_slider-3.jpg" alt=""/></li>
                 <li><img src="img/banner_slider-2.jpg" alt=""/></li>
+                <li><img src="img/banner_slider-5.jpg" alt=""/></li>
                 <li><img src="img/banner_slider-1.jpg" alt=""/></li>
             </ul>
         </div>

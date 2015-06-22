@@ -32,13 +32,13 @@
                             <tr>
                                 <td>Nombre Completo</td>
                                 <td colspan="4">
-                                    {!! Form::text('full_name', null, ['class' => 'form-control']) !!}
+                                    {!! Form::text('full_name', session('client')->nombres . ' ' . session('client')->apellido , ['class' => 'form-control']) !!}
                                 </td>
                             </tr>
                             <tr>
                                 <td>Teléfono 1</td>
                                 <td>
-                                    {!! Form::text('telefono1', null, ['class' => 'form-control']) !!}
+                                    {!! Form::text('telefono1', session('client')->telefono, ['class' => 'form-control']) !!}
                                 </td>
                                 <td>Teléfono 2</td>
                                 <td>
@@ -48,7 +48,7 @@
                             <tr>
                                 <td>Dirección</td>
                                 <td colspan="3">
-                                    {!! Form::textarea('direccion', null, ['class' => 'form-control', 'style' => 'height:60px']) !!}
+                                    {!! Form::textarea('direccion', session('client')->direccion, ['class' => 'form-control', 'style' => 'height:60px']) !!}
                                 </td>
                             </tr>
                             <tr>
@@ -96,11 +96,11 @@
                             </tr>
                             <tr>
                                 <td colspan="3" align="right">Costo de envío</td>
-                                <td class="total" colspan="2"><b>S/. 5.00</b></td>
+                                <td class="total" colspan="2"><b>S/. 0.00</b></td>
                             </tr>
                             <tr>
                                 <td colspan="3" align="right">Total</td>
-                                <td class="total"><b>S/. {{ number_format($totalPagar + 5, 2) }}</b></td>
+                                <td class="total"><b>S/. {{ number_format($totalPagar, 2) }}</b></td>
                             </tr>
                         </tbody>
                     </table>
