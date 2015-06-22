@@ -4,7 +4,7 @@
 <div class="row">
 	<div class="col-sm-12">
 		<div class="col-lg-12 col-sm-12">
-			<span class="title">MUESTROS PRODUCTOS</span>
+			<span class="title">NUESTROS PRODUCTOS</span>
 		</div>
 		<div class="col-lg-12 col-sm-12 hero-feature">
 			@foreach($products as $rec)
