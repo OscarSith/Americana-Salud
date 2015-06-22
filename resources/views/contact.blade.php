@@ -7,7 +7,8 @@
         <span class="title">DIRECCIÓN</span>
         <address>
             Av Aviación 2855 Interior 1158 San Borja<br>
-            <i class="fa fa-phone"></i> Teléfono fijo: 12388*7*1
+            <i class="fa fa-phone"></i> fijo: 12388*7*1<br>
+            <i class="fa fa-envelope"></i> ventas@nutriamerican
         </address>
         <div class="no-padding text-center">
             <h5 class="title1">Cobertura en todo el Perú</h5>

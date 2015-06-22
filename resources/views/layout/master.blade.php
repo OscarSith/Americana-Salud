@@ -116,7 +116,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                 <div class="column">
                     <h4>Contáctenos</h4>
                     <ul>
-                        <li>Correo: servicioalcliente@nutriamerican.com</li>
+                        <li>Correo: ventas@nutriamerican</li>
                         <li><i class="fa fa-phone"></i> Teléfono fijo: 12388*7*1</li>
                     </ul>
                 </div>

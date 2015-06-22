@@ -74,7 +74,7 @@
 					<div class="col-xs-12 product-detail-tab">
 						<!-- Nav tabs -->
 						<ul class="nav nav-tabs">
-							<li class="active"><a href="#desc" data-toggle="tab">Description</a></li>
+							<li class="active"><a href="#desc" data-toggle="tab">Descripción</a></li>
 						</ul>
 
 						<!-- Tab panes -->
