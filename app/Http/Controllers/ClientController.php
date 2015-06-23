@@ -73,7 +73,7 @@ class ClientController extends Controller {
 		$pedido = new Pedido();
 		if($pedido->add($data)) {
 			\Mail::send('emails.send-order', $data, function($message) {
-				$message->to('ventas@nutriamerican', 'Nutriamerican');
+				$message->to('ventas@nutriamerican.com', 'Nutriamerican');
 				$message->subject('Pedido desde la web de www.nutriamerican.com');
 			});
 			$this->destroySession();
