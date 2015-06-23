@@ -25,7 +25,7 @@ class ClientRequest extends Request {
 			'nombres' => 'required|max:255',
 			'apellido' => 'required|max:150',
 			'telefono' => 'required|max:20',
-			'correo' => 'required|email|unique:clients,correo,7',
+			'correo' => 'required|email', //|unique:clients,correo
 			'direccion' => 'required|max:255',
 			'terminos' => 'accepted',
 			'cantidad' => 'required|numeric'
