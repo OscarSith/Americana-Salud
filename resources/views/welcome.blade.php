@@ -8,7 +8,7 @@
                 <li><img src="img/banner_slider-4.jpg" alt=""/></li>
                 <li><img src="img/banner_slider-3.jpg" alt=""/></li>
                 <li><img src="img/banner_slider-2.jpg" alt=""/></li>
-                <li><img src="img/banner_slider-5.jpg" alt=""/></li>
+                <!--<li><img src="img/banner_slider-5.jpg" alt=""/></li>-->
                 <li><img src="img/banner_slider-1.jpg" alt=""/></li>
             </ul>
         </div>

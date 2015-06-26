@@ -117,13 +117,13 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                     <h4>Contáctenos</h4>
                     <ul>
                         <li>Correo: ventas@nutriamerican.com</li>
-                        <li><i class="fa fa-phone"></i> Teléfono fijo: 12388*7*1</li>
+                        <!--<li><i class="fa fa-phone"></i> Teléfono fijo: 12388*7*1</li>-->
                     </ul>
                 </div>
             </div>
         </div>
         <div class="navbar-inverse text-center copyright">
-            © Copyright &copy; {{ date('Y') }} Nutri American Todos los derechos reservados     
+            © Copyright &copy; {{ date('Y') }} Nutri American Todos los derechos reservados
         </div>
     </footer>
 
