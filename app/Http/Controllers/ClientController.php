@@ -35,8 +35,11 @@ class ClientController extends Controller {
 	 */
 	public function store(Request $request, ClientRequest $req)
 	{
-		$client = Client::create($request->all());
-		session(['client' => $client]);
+		if (!Session::has('client')) {
+			$client = Client::create($request->all());
+			session(['client' => $client]);
+		}
+
 		return redirect()->route('checkout');
 	}
 

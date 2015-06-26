@@ -11,6 +11,10 @@
 			<td colspan="3">{{ $full_name }}</td>
 		</tr>
 		<tr>
+			<td><strong>Correo</strong></td>
+			<td colspan="3">{{ session('client')->correo }}</td>
+		</tr>
+		<tr>
 			<td><strong>Telefonos</strong></td>
 			<td colspan="3">{{ $telefono1 }} | {{ $telefono2 }}</td>
 		</tr>
