@@ -24,7 +24,7 @@ class CreatePedidosTable extends Migration {
 			$table->string('pais', 50);
 			$table->string('ciudad', 50);
 			$table->smallInteger('cantidad');
-			$table->timestamps();
+			$table->nullableTimestamps();
 		});
 	}
 

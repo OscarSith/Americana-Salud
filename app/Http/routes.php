@@ -28,6 +28,10 @@ Route::get('checkout', ['as' => 'checkout', 'uses' => 'ClientController@index'])
 Route::get('cancelar-pedido', ['as' => 'cancelarPedido', 'uses' => 'ClientController@cancelar']);
 Route::post('enviar-orden', ['as' => 'sendOrder', 'uses' => 'ClientController@sendOrder']);
 
+Route::post('agregar-carrito', ['as' => 'agregarCarrito', 'uses' => 'HomeController@addCart']);
+Route::get('listar-carrito', ['as' => 'showCart', 'uses' => 'HomeController@listCart']);
+Route::delete('delete-item', ['as' => 'deleteItemCart', 'uses' => 'HomeController@deleteItemCart']);
+
 // Admin
 Route::get('admin', ['as' => 'admin', 'uses' => 'AdminController@index']);
 

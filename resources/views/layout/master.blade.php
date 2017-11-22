@@ -8,15 +8,6 @@
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/jquery.bxslider.css') }}" rel="stylesheet">
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
-<!--Start of Zopim Live Chat Script-->
-<script type="text/javascript">
-window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
-d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
-_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
-$.src="//v2.zopim.com/?35EFLXiAn1hHGO5DJXpUZlvIfZHPSf2k";z.t=+new Date;$.
-type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
-</script>
-<!--End of Zopim Live Chat Script-->
 </head>
 <body>
     <div id="fb-root"></div>
@@ -42,18 +33,33 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	            <!-- End Logo -->
 
 				<!-- Social icons -->
-                <div class="col-sm-3 pull-right text-right" style="padding-top:43px" >
-                    <a class="fa-stack fa-lg social google" href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-google-plus fa-stack-1x" style="color:white"></i>
-                    <a class="fa-stack fa-lg social facebook" href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-facebook fa-stack-1x" style="color:white"></i>
-                    </a>
-                    <a class="fa-stack fa-lg social youtube" href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">
-                        <i class="fa fa-square fa-stack-2x"></i>
-                        <i class="fa fa-youtube-square fa-stack-1x" style="color:white"></i>
-                    </a>
+                <div class="col-sm-3 pull-right text-right" style="padding-top:30px" >
+                    <div>
+                        <a class="fa-stack fa-lg social google" href="https://plus.google.com/u/0/b/116335741794886913445/116335741794886913445/about" target="_blank">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-google-plus fa-stack-1x" style="color:white"></i>
+                        </a>
+                        <a class="fa-stack fa-lg social facebook" href="https://www.facebook.com/pages/Nutri-American/1650161098563356?ref=hl" target="_blank">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-facebook fa-stack-1x" style="color:white"></i>
+                        </a>
+                        <a class="fa-stack fa-lg social youtube" href="https://www.youtube.com/channel/UCe82JT7KJj3EimMWXs7N2cg" target="_blank">
+                            <i class="fa fa-square fa-stack-2x"></i>
+                            <i class="fa fa-youtube-square fa-stack-1x" style="color:white"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <?php
+                        $products = session('cart');
+                        $n = 0;
+                        if ($products && $products->count() > 0) {
+	                        $n = $products->count();
+                        }
+                        ?>
+                        Canasta: {{ $n }} Producto(s)
+                        <br>
+                            <a href="{{ route('showCart') }}">Ver Canasta</a>
+                    </div>
                 </div>
                 <!-- Ends Social icons -->
 	        </div>

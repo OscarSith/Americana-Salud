@@ -23,7 +23,7 @@ class CreateProductsTable extends Migration {
 			$table->string('default_img', 255);
 			$table->char('currency', 1)->default('S');
 			$table->char('estado', 1)->default('A');
-			$table->timestamps();
+			$table->nullableTimestamps();
 		});
 	}
 

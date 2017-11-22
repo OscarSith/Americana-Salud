@@ -35,10 +35,7 @@ class ClientController extends Controller {
 	 */
 	public function store(Request $request, ClientRequest $req)
 	{
-		if (!Session::has('client')) {
-			$client = Client::create($request->all());
-			session(['client' => $client]);
-		}
+		Client::create($request->all());
 
 		return redirect()->route('checkout');
 	}
@@ -57,17 +54,17 @@ class ClientController extends Controller {
 
 	public function show()
 	{
-		if (Session::has('client') ) {
-			return redirect()->route('checkout');
-		}
+//		if (Session::has('client') ) {
+//			return redirect()->route('checkout');
+//		}
 
-		if (Session::has('product')) {
+//		if (Session::has('product')) {
 			$quanty = session('quanty');
 			$product = session('product');
 			return view('register-client', compact('product', 'quanty'));
-		}
+//		}
 
-		return redirect()->to('/');
+//		return redirect()->to('/');
 	}
 
 	public function sendOrder(Request $request, SendOrderRequest $v)

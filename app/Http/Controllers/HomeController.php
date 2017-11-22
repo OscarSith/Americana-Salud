@@ -1,6 +1,7 @@
 <?php namespace Nutri\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 use Nutri\Products;
 use Nutri\ProductImages;
 
@@ -64,5 +65,44 @@ class HomeController extends Controller {
 		});
 
 		return redirect()->back()->with('success', 'Su consulta ha sido enviada con exito.');
+	}
+
+	public function addCart(Request $request) {
+		$product = Products::find($request->input('product_id'));
+
+		$data = null;
+		$productArray = $product->toArray();
+		$productArray['quantity'] = $request->input('quantity');
+
+		if (Session::has('cart') && session('cart')->count() > 0) {
+			$data = session('cart');
+		} else {
+			$data = collect();
+		}
+		$data->push($productArray);
+
+		Session::put('cart', $data);
+
+		return redirect()->back()->with('success', 'Producto agregado al Carrito');
+	}
+
+	public function listCart() {
+		$productsInCart = Session::get('cart');
+
+		return view('cart-list', compact($productsInCart));
+	}
+
+	public function deleteItemCart(Request $request) {
+		$list = session('cart');
+		$id = $request->input('id');
+
+		foreach ($list as $n => $item) {
+			if ($item['id'] == $id) {
+				$list->forget($n);
+				break;
+			}
+		}
+
+		return redirect()->back();
 	}
 }

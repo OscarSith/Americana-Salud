@@ -57,10 +57,10 @@
 								</div>
 								<div class="clearfix"></div>
 								<hr/>
-								{!! Form::open(['route' => 'registerClientData']) !!}
+								{!! Form::open(['route' => 'agregarCarrito', 'method' => 'post']) !!}
 								<input type="hidden" name="product_id" value="{{ $product->id }}">
 								<div class="col-xs-12 input-qty-detail">
-									<input type="text" name="quanty" class="form-control input-qty text-center" value="1">
+									<input type="text" name="quantity" class="form-control input-qty text-center" value="1">
 									<button class="btn btn-default pull-left"><i class="fa fa-shopping-cart"></i> Quiero</button>
 								</div>
 								{!! Form::close() !!}
